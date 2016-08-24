@@ -15,8 +15,6 @@
 	@author Sami Rollins
 
 */
-import java.util.Scanner;
-
 public class GradeCalculator {
 
 
