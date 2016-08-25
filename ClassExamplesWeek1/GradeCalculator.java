@@ -15,6 +15,8 @@
 	@author Sami Rollins
 
 */
+import java.util.Scanner;
+
 public class GradeCalculator {
 
 
@@ -35,12 +37,39 @@ public class GradeCalculator {
 		final int MIN_B = 80;
 		final int MIN_C = 70;
 
-		//set earned points		
-		
+		//set earned points
+		Scanner in = new Scanner(System.in);
+
+		System.out.println("Enter exam points: ");
+		int earnedExam = in.nextInt();
+
+		System.out.println("Enter homework points: ");
+		int earnedHomework = in.nextInt();
+
+		System.out.println("Enter project points: ");
+		int earnedProject = in.nextInt();		
 
 		//calculate grade
+		double exam = ((double)earnedExam)/MAX_EXAM;
+		double homework = ((double)earnedHomework)/MAX_HW;
+		double project = ((double)earnedProject)/MAX_PROJECT;	
+		double finalGrade = (exam * EXAM_PERCENT) +
+							(homework * HW_PERCENT) +
+							(project * PROJ_PERCENT);
+		finalGrade = finalGrade * 100;
 
 		//print result
+		String letter = null;
+		if(finalGrade > 90) {	
+			letter = "A";
+		} else if(finalGrade > 80) {
+			letter = "B";
+		} else if(finalGrade > 70) {
+			letter = "C";
+		} else {
+			letter = "F";
+		}
+		System.out.printf("With a final grade of %3.1f you earn a letter grade of %s.\n", finalGrade, letter);
 
 
 	}
