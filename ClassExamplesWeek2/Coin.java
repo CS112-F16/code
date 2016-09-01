@@ -36,7 +36,7 @@ public class Coin {
 	**/
 	public String toString() {
 		String returnValue = "coin shows: " ;
-		if(isHeads) {
+		if(isHeads == true) {
 			returnValue = returnValue + "heads";
 		} else {
 			returnValue = returnValue + "tails";

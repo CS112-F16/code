@@ -30,11 +30,23 @@ public class Name {
 				" Last: " + this.last;
 	}
 
+	public boolean equals(Name other) {
+
+		if(this.first.equals(other.getFirst()) &&
+			this.last.equals(other.getLast()) &&
+				this.middle == other.getMiddle()) {
+			return true;
+		} 
+		return false;
+		
+
+
+	}
+
 	//constructor(s)
 	public Name(String first, String last, char middle) {
 		this.first = first;
 		this.last = last;
 		this.middle = middle;
 	}
-
-}
+}	
