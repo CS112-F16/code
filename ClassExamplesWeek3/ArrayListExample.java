@@ -39,7 +39,7 @@ public class ArrayListExample {
 		numbers.add(28);
 
 		for(int number: numbers) {
-			System.out.println(number);s
+			System.out.println(number);
 		}
 
 		//Even though the get method returns an
