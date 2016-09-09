@@ -1,4 +1,4 @@
-bob, 76
-sally, 98
-jane, 65
-harry, 97
+bob,76
+sally,98
+jane,65
+harry,97

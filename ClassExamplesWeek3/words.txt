@@ -1,6 +1,5 @@
 usf
-computer
-science
+computer science
 is
 the
 best
