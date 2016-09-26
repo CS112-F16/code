@@ -1,40 +1,46 @@
+/**
+	A class to store a list of integers.
+	Values will be stored in an array.
+**/
 public class NumberList {
 	
+	//data members
 	private int[] numbers;
-	private int count;
 
-
+	/**
+		Construct an empty list.
+	**/
 	public NumberList() {
-		this.numbers = new int[10];
-		this.count = 0;
 	}
 
-	//resize
-
-	//insert a new number at the beginning of the list
+	/**
+		Insert a new number at the beginning of the list.
+		@param - newNumber
+	**/
 	public void addFirst(int newNumber) {
-		if(this.count < this.numbers.length) {
-			for(int i = count; i > 0; i--) {
-				this.numbers[i] = this.numbers[i-1];
-			}
-			this.numbers[0] = newNumber;
-			this.count++;
-		}
 	}
 
-	//remove the first item in the list
+	/**
+		Remove the first item in the list.
+		If the list is empty, do nothing.
+	**/
+	public void removeFirst() {
+	}
 
-	//contains duplicates?	
-	//for each item - does it contain another of that item?
 
-	//tostring
+	/**
+		Returns true if the list contains any duplicate
+		numbers.
+	**/
+	public boolean containsDuplicates() {
+	}
+ 
+
+	/**
+		Return a string representation of the list in the format
+		{23, 4, 23, 66, 2}
+	**/
 	public String toString() {
-		String returnValue = "";
-
-
-		return returnValue;
 	}
-
-
 
 }
