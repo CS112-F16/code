@@ -13,7 +13,12 @@ public class NumberList {
 	**/
 	public NumberList() {
 
-		numbers = new int[2];
+		this(10);
+	}
+
+	public NumberList(int size) {
+
+		numbers = new int[size];;
 		count = 0;		
 
 	}
@@ -65,6 +70,11 @@ public class NumberList {
 			}
 
 			count--;
+		} else {
+			// IndexOutOfBoundsException exp = new IndexOutOfBoundsException("No items in list.");
+			// throw exp;
+
+			throw new IndexOutOfBoundsException("No items in list.");
 		}
 	}
 
@@ -85,8 +95,7 @@ public class NumberList {
 		}
 
 		return false;
-	}
- 
+	} 
 
 	/**
 		Return a string representation of the list in the format
@@ -95,7 +104,6 @@ public class NumberList {
 	**/
 	public String toString() {
 		String returnValue = "";
-
 
 		for(int i = 0; i < count; i++) {
 			returnValue += numbers[i] + " ";

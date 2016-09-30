@@ -30,6 +30,12 @@ public class NumberListDriver {
 		list.removeFirst();		
 		System.out.println(list); //{}
 
+		try {
+			list.removeFirst();
+		} catch(IndexOutOfBoundsException exp) {
+			System.out.println(exp.getMessage());
+		}
+
 		System.out.println(list.containsDuplicates()); //false
 
 	}
