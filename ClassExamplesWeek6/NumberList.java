@@ -12,17 +12,10 @@ public class NumberList {
 		Construct an empty list.
 	**/
 	public NumberList() {
-
-		this(10);
-	}
-
-	public NumberList(int size) {
-
-		numbers = new int[size];;
+		numbers = new int[2];
 		count = 0;		
-
-	}
-
+	} 
+ 
 	/**
 		Private method as it will not be invoked anywhere outside of
 		the class. 
