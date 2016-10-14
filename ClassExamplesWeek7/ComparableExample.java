@@ -7,10 +7,10 @@ public class ComparableExample {
 	public static void main(String[] args) {
 
 
-		Comparable n1 = new Name("Bob", "Smith");
-		Comparable n2 = new Name("Jane", "Doe");
+		// Comparable n1 = new Name("Bob", "Smith");
+		// Comparable n2 = new Name("Jane", "Doe");
 
-		System.out.println("n1.compareTo(n2) = " + n1.compareTo(n2));
+		// System.out.println("n1.compareTo(n2) = " + n1.compareTo(n2));
 
 		// String s1 = "apple";
 		// String s2 = "alpaca";

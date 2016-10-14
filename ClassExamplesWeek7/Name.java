@@ -1,4 +1,4 @@
-public class Name implements Viewable, Comparable<Name>{
+public class Name implements Viewable, Comparable<Name> {
 
 	//data members
 	private String first;
