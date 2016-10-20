@@ -33,17 +33,17 @@ public class Student extends USFPerson {
 	}
 
 	/**
-		Overrides the toString class.
+		Overrides the toString method of superclass.
 	**/
 	public String toString() {
 
 		//OPTION 1: call the parent toString method
 		//			partial overriding
-		// String parentString = super.toString();
-		// return parentString + " Class: " + classYear + " Major: " + major;
+		String parentString = super.toString();
+		return parentString + " Class: " + classYear + " Major: " + major;
 
 		//OPTION 2: directly access protected members from parent.
-		return "Name: " + name + " ID: "+ id + " Class: " + classYear + " Major: " + major;
+		// return "Name: " + name + " ID: "+ id + " Class: " + classYear + " Major: " + major;
 	
 		//OPTION 3: use the super class getName and getId methods
 		// String localName = super.getName();

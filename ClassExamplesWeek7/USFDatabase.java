@@ -20,6 +20,8 @@ public class USFDatabase {
 		usfdb.add(new Faculty("Yannick", 99393, "Sociology"));
 		usfdb.add(new Faculty("Bob", 1111, "Chemistry"));
 
+		Collections.sort(usfdb);
+
 		for(USFPerson person: usfdb) {
 
 			//print the string representation of each person
@@ -29,17 +31,17 @@ public class USFDatabase {
 
 			//if the person is a Student then print the class year
 			//if the person is a Faculty then print the department
-			if(person instanceof Student) {	
-				//cast the reference to Student then call the Student
-				//method			
-				System.out.println(((Student)person).getClassYear());
+			// if(person instanceof Student) {	
+			// 	//cast the reference to Student then call the Student
+			// 	//method			
+			// 	System.out.println(((Student)person).getClassYear());
 
-				//OPTION 2:
-				//Student s = (Student)person;
-				//System.out.println(s.getClassYear());
-			} else if(person instanceof Faculty) {
-				System.out.println(((Faculty)person).getDepartment());
-			}
+			// 	//OPTION 2:
+			// 	//Student s = (Student)person;
+			// 	//System.out.println(s.getClassYear());
+			// } else if(person instanceof Faculty) {
+			// 	System.out.println(((Faculty)person).getDepartment());
+			// }
 
 		}
 
