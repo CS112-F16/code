@@ -3,7 +3,6 @@
 **/
 public class RecursionFun {
 
-
 	/**
 		Uses recursion to calculate factorial.
 	**/
@@ -111,13 +110,49 @@ public class RecursionFun {
 
 	}
 
+	/**
+		Prints a single row of n stars.
+	**/
+	public static void printStarRow(int n) {
+		if(n == 1) {
+			System.out.println("*");
+			return;
+		}
+		System.out.print("*");
+		printStarRow(n-1);
+	}
+
+	/**
+		Prints an nxn square of stars.
+	**/
+	public static void printSquare(int n) {
+
+		printSquare(n, 0);
+
+	}
+
+	/**
+		Helper method to print an nxn square of stars.
+	**/	
+	private static void printSquare(int n, int count) {
+		if(n == count) {
+			return;
+		}
+		printStarRow(n);
+		printSquare(n, count+1);
+	}
+
 
 	public static void main(String[] args) {
 
-		System.out.println(factorial(5));
-		printString("hello");
-		printNums(3);
-		System.out.println(countAs("lala"));
+		//printStarRow(3);
+		printSquare(3);
+
+
+		// System.out.println(factorial(5));
+		// printString("hello");
+		// printNums(3);
+		// System.out.println(countAs("lala"));
 
 	}
 
