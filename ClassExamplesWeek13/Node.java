@@ -1,3 +1,7 @@
+/**
+	A class to represent a LinkedList node containing
+	an Integer.
+**/
 public class Node {
 
 	private Integer data;
