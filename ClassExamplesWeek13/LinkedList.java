@@ -91,7 +91,7 @@ public class LinkedList {
 			current = current.getNext();
 		}
 
-		if(current == null) {
+		if(current == null || index < 0) {
 			return -1;
 		}
 		return current.getData();
