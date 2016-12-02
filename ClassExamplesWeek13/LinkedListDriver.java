@@ -15,12 +15,15 @@ public class LinkedListDriver {
 		ll.addAtHead(38);
 
 		// System.out.println(ll.toString());
-
-		System.out.println("get(0): " + ll.get(0));
-		System.out.println("get(1): " + ll.get(1));
-		System.out.println("get(2): " + ll.get(2));
-		System.out.println("get(-1): " + ll.get(-1));
-
+		
+		try {
+		    System.out.println("get(0): " + ll.get(0));
+		    System.out.println("get(1): " + ll.get(1));
+		    System.out.println("get(2): " + ll.get(2));
+		    System.out.println("get(-1): " + ll.get(-1));
+		} catch(LinkedListException lle) {
+		    System.out.println(lle.getMessage());
+		}
 
 		// System.out.println("find(3): " + ll.find(3));
 		// System.out.println("find(12): " + ll.find(12));

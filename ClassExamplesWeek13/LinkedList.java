@@ -83,7 +83,7 @@ public class LinkedList {
 		Return the data at the position specified by index.
 		Return -1 if index is out of range.
 	**/
-	public Integer get(int index) {
+	public Integer get(int index) throws LinkedListException {
 		
 		Node current = head;
 
@@ -92,7 +92,7 @@ public class LinkedList {
 		}
 
 		if(current == null || index < 0) {
-			return -1;
+		    throw new LinkedListException("Index out of range.");
 		}
 		return current.getData();
 
